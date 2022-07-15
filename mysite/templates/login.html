@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  Login
+{% endblock title %}
+
+{% block content %}
+
+
+  <center>
+ <div>
+<form action="login" style="margin-top: 20px; background-color: rosybrown; height: 500px; width: 500px; padding-left: 100px; padding-right: 100px; padding-top: 50px;">
+  <img class="mb-4" src="https://www.seekpng.com/png/full/138-1387775_login-to-do-whatever-you-want-login-icon.png" alt="" width="72" height="57">
+  <h1 class="h3 mb-3 fw-normal">Login</h1>
+
+  <div class="form-floating">
+    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+    <label for="floatingInput">Email address</label>
+  </div>
+  <div class="form-floating">
+    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+    <label for="floatingPassword">Password</label>
+  </div>
+
+  <div class="checkbox mb-3">
+    <label>
+      <input type="checkbox" value="remember-me"> Remember me
+    </label>
+  </div>
+  <button class="w-100 btn btn-lg btn-primary" type="submit">Get in</button>
+  
+  </form>
+</div>
+</center>
+<br><br>
+
+{% endblock content %}
